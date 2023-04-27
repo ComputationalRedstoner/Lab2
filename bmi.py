@@ -10,5 +10,5 @@ def calculate_bmi(Height, Weight):
         print("You are Normal Weight")
     else:
         print("You are Over Weight")
-        
+
 calculate_bmi(Weight=57,Height=1.73)
