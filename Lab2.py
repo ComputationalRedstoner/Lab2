@@ -8,8 +8,11 @@ def display_main_menu():
     print(xsplit)
     split_numbers = [float(n) for n in xsplit]
     return split_numbers
-def calc_average():
-    print("calc_average")
+def calc_average(split_numbers):
+    result = float((sum(split_numbers))/(len(split_numbers)))
+    print("Average: ")
+    print(result)
+    return result
 
 def calc_average_temperature(split_numbers):
     i = 0
@@ -29,11 +32,8 @@ def calc_min_max_temperature(split_numbers):
     print(split_numbers)
     return split_numbers
 
-def calc_median_temperature():
+def calc_median_temperature(split_numbers):
     median_temperature = statistics.median(split_numbers)
     print(median_temperature)
+    return median_temperature
 
-split_numbers = display_main_menu()
-calc_average_temperature(split_numbers)
-calc_min_max_temperature(split_numbers)
-calc_median_temperature()
